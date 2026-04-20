@@ -1,0 +1,126 @@
+[data-ia-scholar-root] {
+  --ia-border: #d9e3ef;
+  --ia-bg: #f8fbff;
+  --ia-text: #1f3550;
+  --ia-muted: #66788a;
+  --ia-primary: #1f5ea8;
+  --ia-primary-hover: #174b85;
+  --ia-shadow: 0 4px 14px rgba(17, 37, 63, 0.08);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ia-text);
+  background: var(--ia-bg);
+  border: 1px solid var(--ia-border);
+  border-radius: 8px;
+  box-shadow: var(--ia-shadow);
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+[data-ia-scholar-root].ia-floating {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  width: min(320px, calc(100vw - 32px));
+}
+
+[data-ia-scholar-root] .ia-card {
+  padding: 12px;
+}
+
+[data-ia-scholar-root] .ia-eyebrow {
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ia-muted);
+  margin-bottom: 4px;
+}
+
+[data-ia-scholar-root] .ia-title {
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+[data-ia-scholar-root] .ia-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  min-height: 24px;
+  margin-bottom: 10px;
+}
+
+[data-ia-scholar-root] .ia-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e9f1fb;
+  color: var(--ia-primary);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+[data-ia-scholar-root] .ia-pill-muted {
+  background: #eef2f6;
+  color: var(--ia-muted);
+}
+
+[data-ia-scholar-root] code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 11px;
+  line-height: 1.4;
+  word-break: break-all;
+  background: #fff;
+  border: 1px solid var(--ia-border);
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+[data-ia-scholar-root] .ia-form {
+  margin: 0;
+}
+
+[data-ia-scholar-root] .ia-submit {
+  display: block;
+  width: 100%;
+  min-height: 36px;
+  padding: 8px 12px;
+  border: 1px solid var(--ia-primary);
+  border-radius: 6px;
+  background: var(--ia-primary);
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+}
+
+[data-ia-scholar-root] .ia-submit:hover {
+  background: var(--ia-primary-hover);
+  border-color: var(--ia-primary-hover);
+}
+
+[data-ia-scholar-root] .ia-submit:disabled {
+  background: #c8d4e2;
+  border-color: #c8d4e2;
+  color: #f7f9fb;
+  cursor: not-allowed;
+}
+
+[data-ia-scholar-root] .ia-submit:focus-visible {
+  outline: 2px solid rgba(31, 94, 168, 0.28);
+  outline-offset: 2px;
+}
+
+[data-ia-scholar-root] .ia-note {
+  margin-top: 8px;
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--ia-muted);
+}
